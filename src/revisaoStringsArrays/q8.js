@@ -7,22 +7,19 @@ compressString("abc"); // retorna "abc" */
 
 
 function compressString(contentString){
-    let letters = [];
-    for (let i = 0; i< contentString.length; i++){
-        if (letters.includes(contentString[i]) === false){
-            letters.push(contentString[i]);
-        }
-    }
-
     let result = "";
-    for (let i = 0; i< letters.length; i++){
+    let letters = [];
+    for (let i = 0; i< contentString.length; i++){        
         let count = 0;
         for (let j = 0; j < contentString.length; j ++){
-            if (letters[i] === contentString[j]){
+            if (contentString[i] === contentString[j]){
                 count++;    
             }
         }
-        result = result + `${letters[i]}${count}`;
+        if (!letters.includes(contentString[i])){
+            result = result + `${contentString[i]}${count}`;
+            letters.push(contentString[i]);
+        }
     }
     if (result.length > contentString.length){
         return contentString;
