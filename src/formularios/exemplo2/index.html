@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <h1>Exemplo de utilização de JS</h1>
+    <p id="p1">Lorem ipsum, dolor sit amet consectetur adipisicing 
+        elit. Vero voluptatum tenetur qui repellat quia 
+        laudantium cumque ut. Asperiores, minima recusandae 
+        aut nesciunt optio 
+        quia ducimus nemo maxime assumenda tempore iure.</p>
+
+    <label for="input1">Campo de texto</label>
+    <input type="text" id="input1" value="123"/>
+
+    <br/>
+    <br/>
+    <script>
+        /*
+        document.getElementById("nome do id"); //Elemento por Id
+        document.getElementsByClassName("nome da classe"); //Devolde um vetor de elementos 
+        document.getElementsByName(""); //Busca pela propriedade name
+        document.getElementsByTagName(""); //Retorna um vetor de elementos de mesma tag
+        */
+       let componentesH1 = 
+               document.getElementsByTagName("h1");
+       document.write(componentesH1[0]);
+
+       let p1 = document.querySelector("#p1");
+       document.write(p1.innerText);
+
+       
+
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#img_logo {
+    height: 100px;
+    width: 100px;    
+}
+
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+div {
+    border: 2px solid red;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+
+
